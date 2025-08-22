@@ -1,17 +1,8 @@
-# Latest version 1.12.7.0
+# Snaz
 
-**Playing now and twitch functionality is removed in 1.12.7.0 !!** due to the end of Snaz development cycle. To give Snaz more survivability as a standalone program without any external program to be able to break Snaz without maintenance.
+## Download
 
-If you would like to keep twitch and playing now, download 1.12.6.0 on the release page or don't update to 1.12.7.0 as long as both features keep working.
-
-## Snaz
-
-- [Wiki](https://github.com/JimmyAppelt/Snaz/wiki )
-- [Changelog](http://jimmyappelt.be/Downloads/Software/Snaz/releasenotes.txt)
-
-### Download
-
-- You can download snaz [on the release page](https://github.com/JimmyAppelt/Snaz/releases) 
+You can download Snaz [on the release page](https://github.com/JimmyAppelt/Snaz/releases) 
 
 ## Overview
 
@@ -27,6 +18,6 @@ System Info | capture and stream data real time like cpu usage, ram, processes, 
 Dynamic Files | create a textfile or imagefile by choice and link it to any online source
 
 > [!TIP]
-> Check the [documentation](https://github.com/JimmyAppelt/Snaz/wiki) for more detailed information
+> Check the [documentation](https://jimmyappelt.github.io/snaz/) for more detailed information
 
 ![sample-image](https://i.gyazo.com/985dabdbf42b9dc28ec9ac4f3bd71a6c.png)
