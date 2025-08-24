@@ -1,0 +1,31 @@
+# Editors
+.vscode/
+.cursor/
+.idea/
+
+# Dependencies
+node_modules/
+
+# Turbo
+.turbo/
+
+# Next.js
+.next/
+out/
+
+# TypeScript
+tsconfig.tsbuildinfo
+
+# ESLint
+.eslintcache
+
+# Environment variables
+.env
+
+# Pagefind
+_pagefind/
+docs/public/sitemap.xml
+
+# OS
+.DS_Store
+

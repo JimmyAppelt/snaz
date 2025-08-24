@@ -1,0 +1,29 @@
+# Solving warning or error within System Info
+
+## Cannot Load Counter Name data
+
+```console
+Cannot Load Counter Name data because an invalid index was read from the registry
+```
+
+This issue comes up in cases when one or more performance counters on your system are corrupted.
+
+### Rebuild all performance counters:
+
+* Open command prompt (with Admin privileges)
+* Run command: `lodctr /R`
+
+The message with: `Info: Successfully rebuilt performance counter setting ...` will appear on success.
+
+In case you receive the message `Unable to rebuild performance counter setting from system backup store, error code is 2` possible solutions:
+
+* Close all running programs
+* Make sure you use `lodctr /R` with uppercase `R`
+* If in directory `system32` move to directory `SysWOW64` *(with cd.. > cd syswow64)* and retry the `lodctr /R` command in this directory
+
+After successfully rebuilt, re-open Snaz and check if same warning occurs. If the same warning occurs, please feel free to open a new issue. 
+
+## Snaz is responding only few frames/sec
+
+In very rare cases, it is observed that the network traffic counter is not picking up your system network card properly. Try disabling the network traffic meter in **File → Settings → System Info**
+

@@ -1,0 +1,125 @@
+import { FileTree } from 'nextra/components'
+
+# JSON HTML CSS JS example
+
+<FileTree>
+    <FileTree.File name="index.html" />
+    <FileTree.Folder name="js" open>
+      <FileTree.File name="playing-now.js"/>
+    </FileTree.Folder>
+    <FileTree.Folder name="css" open>
+      <FileTree.File name="style.css"/>
+    </FileTree.Folder>
+</FileTree>
+
+## HTML
+
+```html filename="index.html"
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Snaz - Playing Now from json file</title>
+
+    <!--styles-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/playing-now.js"></script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="artist"></div>
+        <div class="song"></div>
+        <!--<div class="album"></div>-->
+    </div>
+</body>
+
+</html>
+```
+
+## Javascript
+
+```js filename="js/playing-now.js"
+var currentsong;
+
+$(document).ready(function () {
+    start();
+});
+
+function start() {
+    setInterval(function () {
+        getJsonData(function (data) {
+            if (currentsong != data.song) {
+                $('#artist').html(data.artist).animateCss('fadeInLeft');
+                $('#song').html(data.song).animateCss('fadeInRight');
+                // $('#album').html(data.album).animateCss('bounceInLeft');
+                currentsong = data.song;
+            }
+        });
+    }, 1000);
+}
+
+// Get Json data from file on server
+function getJsonData(callback) {
+    var xmlhttp = new XMLHttpRequest();
+    var url = 'https://127.0.0.1/playing-now/track-info.json';
+
+    xmlhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            var data = JSON.parse(this.responseText);
+            callback(data);
+        }
+    };
+    xmlhttp.open('GET', url, true);
+    xmlhttp.send();
+}
+
+// jquery extension function for animate.css
+$.fn.extend({
+    animateCss: function (animationName) {
+        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        this.addClass('animated ' + animationName).one(animationEnd, function () {
+            $(this).removeClass('animated ' + animationName);
+        });
+    }
+});
+```
+
+## CSS
+
+```css filename="css/style.css"
+/*
+.album {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+*/
+
+.artist {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 80px;
+    color: yellow;
+}
+
+.song {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: grey;
+}
+
+.wrapper {
+    width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+body { 
+    overflow: hidden;
+}
+```

@@ -1,0 +1,69 @@
+@import 'tailwindcss';
+
+@variant dark (&:where(.dark *));
+
+@theme {
+  --animate-fade-in: fadeIn 0.3s ease-in;
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+article img,
+article video {
+  @apply rounded-lg mt-6 shadow-lg border border-gray-200 dark:border-gray-700;
+}
+
+.with-image-icon {
+  @apply flex items-center gap-2;
+
+  img {
+    @apply mt-0 w-4 h-4 border-0;
+  }
+}
+
+kbd {
+  @apply rounded-md px-2 py-1 mx-1 text-sm font-semibold border;
+  background-color: theme('colors.gray.100');
+  color: theme('colors.gray.800');
+  border-color: theme('colors.gray.200');
+
+  .dark & {
+    background-color: theme('colors.gray.800');
+    color: theme('colors.gray.200');
+    border-color: theme('colors.gray.700');
+  }
+}
+
+code {
+  @apply text-pink-600 dark:text-slate-200;
+}
+
+.lucide {
+  stroke-width: 1.5px;
+}
+
+.nextra-callout {
+  @apply pt-3 pb-4;
+
+  > div:first-child {
+    @apply px-3;
+  }
+
+  > div:nth-child(2) {
+    @apply mt-0.5;
+  }
+}
+
+.badge-new {
+  @apply dark:after:border-blue-200/30 dark:after:bg-blue-900/30 dark:after:text-blue-200;
+  &:after {
+    @apply ms-1.5 rounded-full border border-blue-200 bg-blue-100 px-1.5 text-xs font-bold text-blue-900 content-["New"];
+  }
+}

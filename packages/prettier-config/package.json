@@ -1,0 +1,7 @@
+{
+  "name": "@snaz/prettier-config",
+  "version": "0.0.1",
+  "type": "module",
+  "private": true,
+  "main": "index.js"
+}

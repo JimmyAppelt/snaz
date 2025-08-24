@@ -1,0 +1,33 @@
+{
+    "$schema": "https://turbo.build/schema.json",
+    "globalDependencies": ["pnpm-lock.yaml", "patches/*"],
+    "tasks": {
+      "build": {
+        "dependsOn": [
+          "^build"
+        ],
+        "outputs": ["dist/**", ".next/**", "public/_pagefind/**"]
+      },
+      "deploy": {
+        "dependsOn": [
+          "^build"
+        ],
+        "outputs": ["out/**"]
+      },
+      "test": {
+        "outputs": ["dist/**"]
+      },
+      "types:check": {
+        "dependsOn": [
+          "^build"
+        ],
+        "outputs": ["dist/**", ".next/**"]
+      },
+      "dev": {
+        "dependsOn": [
+          "^build"
+        ],
+        "cache": false
+      }
+    }
+  }

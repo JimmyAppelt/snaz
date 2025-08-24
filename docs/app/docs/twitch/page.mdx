@@ -1,0 +1,69 @@
+import { Highlight } from '@/components/content'
+import { RemovedNote } from '@/components/content'
+
+# Twitch
+
+<RemovedNote />
+
+## Available format codes
+
+Code | Outputs
+------------ | -------------
+`$viewers` | amount of current viewers
+
+## Format examples
+
+Example format | Live output
+------------ | -------------
+`$viewers` | 1423
+Viewers: `$viewers` | Viewers: 1423
+Foo: `$viewers` | Foo: 1423
+`$viewers` peeps watching now | 1423 peeps watching now
+
+## Change - Game / Status
+
+* Before you can use this feature you need to [authenticate](#authenticate)
+
+### Custom game
+The file where you can add predefined game names can be found in `~/Data/games-custom.json`
+
+Original file contents:
+
+```json filename="games-custom.json"
+{
+  "Games": {
+    "1": "My custom game name",
+    "2": "My second custom game name"       
+  }
+}
+```
+
+You can change or add you're predefined game title like so:
+
+```json filename="games-custom.json"
+{
+  "Games": {
+    "1": "My game title 1",
+    "2": "My game title 2",
+    "3": "My game title 3"      
+  }
+}
+```
+
+## Specific notes
+
+It's recommended to set the request time to 60 seconds or higher 
+
+## Authenticate
+
+Navigate to **File → Settings → Twitch**
+
+![Authenticate](https://i.imgur.com/4n7Rpj9.png)
+
+1. press the <Highlight>Get New Token</Highlight> button *(a browser window will open to login in you're twitch account if you didn't already done so)*
+2. you wil be given a token *(once you confirmed authorization for snaz)*, paste the token into the <Highlight>Redeem token</Highlight> textbox
+3. press the <Highlight>Redeem</Highlight> button
+4. press <Highlight>Save</Highlight>
+
+
+

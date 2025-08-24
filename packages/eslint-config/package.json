@@ -1,0 +1,25 @@
+{
+  "name": "@snaz/eslint-config",
+  "version": "0.0.1",
+  "type": "module",
+  "private": true,
+  "main": "index.js",
+  "dependencies": {
+    "@eslint/js": "^9.33.0",
+    "@next/eslint-plugin-next": "^15.4.6",
+    "@snaz/prettier-config": "workspace:*",
+    "eslint-config-flat-gitignore": "^2.1.0",
+    "eslint-import-resolver-typescript": "^4.4.4",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "globals": "^16.3.0",
+    "typescript-eslint": "^8.39.1"
+  },
+  "peerDependencies": {
+    "eslint": "^9.33.0",
+    "typescript": "^5.9.2"
+  }
+}

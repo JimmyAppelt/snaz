@@ -1,0 +1,24 @@
+# Time
+
+## Available format codes
+
+Code | Outputs
+------------ | -------------
+`$h` | hours
+`$m` | minutes 
+`$s` | seconds
+`$tt` | AM/PM
+
+For `$tt` to work, enable **Times in Am/Pm($tt)** in the Time module
+
+![](https://i.gyazo.com/e32e15e89cfe8516ca44bb4678750c79.png)
+
+## Format examples
+
+Example format | Live output
+------------ | -------------
+`$h`:`$m`:`$s` | 16:15:35
+`$h`:`$m` | 16:15 
+`$h`:`$m`:`$s` `$tt` | 04:15:35 PM 
+`$h`:`$m` `$tt` | 04:15 PM
+`$h` foo `$m` `$tt` | 04 foo 15 PM

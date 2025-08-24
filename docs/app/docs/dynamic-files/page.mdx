@@ -1,0 +1,69 @@
+# Dynamic Files
+
+> [!NOTE]
+>
+> Since August 2016, a Client-Id is required to send request. The examples on this page don't demonstrate that
+
+## Signature
+
+Name | Content/Outputs
+------------ | -------------
+Filename | the name of the file that will be generated in the `~/DynamicTextFiles` folder
+Path | the path to request the content from 
+Content/Response | the response from the path
+Type | the type of response you expect, ether `Text` or an `Image` 
+Status | report updates, completed, failed statuses
+
+## Examples
+
+### Text Type
+
+* A file that we will call `Game`
+* Type = Text
+* A `game_direct.php` file that is on a server with the next contents. In this case we will add 
+an extra value `?channel=XXX` to the path. Where `XXX` will be the channel name you want the data from.
+
+```php
+<?php
+$channel = $_GET['channel'];
+$data    = json_decode( @file_get_contents( 'https://api.twitch.tv/kraken/channels/' . $channel ), true );
+$game    = $data['game'];
+
+if( $game != null ) {
+    echo $game;
+    // echo "Game: " . $game;
+} else {
+    echo " ";
+}
+?>
+```
+
+![Example 1](https://i.imgur.com/QXYUbbH.png)
+
+Response:
+
+![Response](https://i.imgur.com/K5IDuz3.png)
+
+### Image Type
+
+* A file that we will call `ImageName`
+* Type = Image
+* A `myimage.php` file that is on a server with the next contents
+
+```php
+<?php
+   echo "https://ttv-backgroundart.s3.amazonaws.com/404_backgroundart.jpg";
+?>
+```
+
+![Example 1](https://i.imgur.com/QqUMdzh.png)
+
+Response:
+
+![Response](https://i.imgur.com/ZGLQyvx.png)
+
+
+### Specific notes
+
+* Files can be any `http://` or `https://` call, as long as it returns text or an image link
+* Possibilities are endless and up to you, since this module acts as a plugin hoster to write text- and image files for you

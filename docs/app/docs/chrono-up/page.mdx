@@ -1,0 +1,22 @@
+# Chrono Up
+
+## Available format codes
+
+Code | Outputs
+------------ | -------------
+`$d` | days
+`$h` | hours
+`$m` | minutes 
+`$s` | seconds
+`$totalminutes` | total minutes
+
+## Format examples
+
+Example format | Live output
+------------ | -------------
+`$h`:`$m` | 10:15 
+`$h`:`$m`:`$s` | 10:15:35
+`$d` days and `$h`:`$m`:`$s` | 2 days and 10:15:35
+`$d` days `$h` hours `$m` minutes `$s` seconds | 2 days 10 hours 15 minutes 35 seconds
+`$totalminutes`:`$s` | 75:35 *(e.g. 1:15:35 will be 75 minutes)*
+`$h` foo `$m` minutes `$s` seconds| 10 foo 15 minutes 35 seconds

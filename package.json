@@ -1,0 +1,30 @@
+{
+  "name": "snaz-root",
+  "version": "0.0.1",
+  "description": "Snaz",
+  "type": "module",
+    "private": true,
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "deploy": "turbo deploy",
+    "clean": "rimraf .turbo && pnpm -r exec rimraf .next out node_modules",
+    "lint:js": "eslint .",
+    "format:js": "eslint . --fix",
+    "types:check": "npx tsc --noEmit"
+  },
+  "devDependencies": {
+    "@snaz/eslint-config": "workspace:*",
+    "@snaz/prettier-config": "workspace:*",
+    "eslint": "9.33.0",
+    "prettier": "3.6.2",
+    "rimraf": "^6.0.1",
+    "turbo": "2.5.6",
+    "typescript": "5.9.2"
+  },
+  "engines": {
+    "node": "^22",
+    "pnpm": "^10"
+  },
+  "packageManager": "pnpm@10.14.0"
+}

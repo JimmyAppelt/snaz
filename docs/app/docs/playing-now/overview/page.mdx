@@ -1,0 +1,36 @@
+import { RemovedNote } from '@/components/content'
+
+# Overview
+
+<RemovedNote />
+
+## Local Players
+
+* <p className="with-image-icon">![Spotify](https://i.imgur.com/L6HZznk.png) [Spotify](/docs/playing-now/players/spotify)</p>
+* <p className="with-image-icon">![Foobar](https://i.imgur.com/Uzqo4Od.png) [Foobar2000](/docs/playing-now/players/foobar2000)</p>
+* <p className="with-image-icon">![Winamp](https://i.imgur.com/df3h1TP.png) [Winamp](/docs/playing-now/players/winamp)</p>
+* <p className="with-image-icon">![iTunes](https://i.imgur.com/9aUOoG2.png) [iTunes](/docs/playing-now/players/itunes)</p>
+* <p className="with-image-icon">![VLC](https://i.imgur.com/ghuNBOU.png) [VLC media player](/docs/playing-now/players/vlc-media-player)</p>
+
+> [!NOTE]
+>
+> Album and album art are query-ed from the Spotify API **(will respond with the first match, if any)** for all players except iTunes, you are able to get the album and album art you set within iTunes. In order to receive the album art Authentication with the Spotify API is required.
+
+## Spotify Credentials
+
+In order to receive album info and it's art, authentication with the Spotify API is required. (for all players except iTunes) 
+
+[How do I get my personal Spotify credentials](/docs/playing-now/spotify-credentials)
+
+## Json file
+
+* [Json data for track info](/docs/playing-now/json-data)
+* The directory to output this file can be chosen in the menu **File → Settings → Playing Now**
+* [Example code for dynamic playing now content with the json file](/docs/playing-now/json-html-css-js-example)
+
+## Save track information in separate text files
+
+This option is available in the menu **File → Settings → Playing Now**
+
+When enabled, `TrackArtist.txt`, `TrackSong.txt` and `TrackAlbum.txt` will be available in the `TextFiles` folder on the next track.
+

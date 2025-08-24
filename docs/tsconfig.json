@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "esnext",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "exactOptionalPropertyTypes": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "moduleResolution": "bundler",
+    "jsx": "preserve",
+    "module": "esnext",
+    "resolveJsonModule": true,
+    "paths": {
+        "@/*": ["./*"],
+      // These work at runtime due to Next.js internal resolution or custom config,
+      // but we include them here so TypeScript doesn't complain.
+      "private-next-root-dir/*": ["./*"],
+      "next-mdx-import-source-file": ["./mdx-components.tsx"]
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "strictNullChecks": true,
+    "noUncheckedIndexedAccess": true
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "types/**/*.d.ts"],
+  "exclude": ["node_modules", ".next"]
+}
+
+

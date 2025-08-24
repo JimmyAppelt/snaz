@@ -1,0 +1,28 @@
+# Spotify
+
+<p className="with-image-icon mt-[1.25em]">![Spotify](https://i.imgur.com/L6HZznk.png) [Spotify](https://www.spotify.com/)</p>
+
+## Available format codes
+
+Code | Outputs
+------------ | -------------
+`$artist` | artist name
+`$song` | song name
+`$album` | album name
+`$artist_upper` | ARTIST NAME
+`$song_upper` | SONG NAME
+`$album_upper` | ALBUM NAME
+
+## Format examples
+
+Example format | Live output
+------------ | -------------
+`$artist` - '`$song`' | Faith No More - 'Easy'
+Artist: `$artist` Song: `$song` | Artist: Faith No More Song: Easy
+`$artist` - '`$song`' - `$album` | Faith No More - 'Easy' - Angel Dust
+`$artist` - foo - '`$song`' | Faith No More - foo - 'Easy'
+`$artist_upper` - foo - '`$song`' | FAITH NO MORE - foo - 'Easy'
+
+## Specific notes
+
+Album and album art are queried from online API and requires [authentication](/docs/playing-now/spotify-credentials).
