@@ -38,12 +38,7 @@ export default function IndexPage(): JSX.Element {
         </div>
       </div>
 
-      <Image
-        src="https://camo.githubusercontent.com/70ab102f66cd643200983105effa5cdfde996e93c9700430ad15770cfe7d6115/68747470733a2f2f692e6779617a6f2e636f6d2f62356434396335356639366463636631326564316263653061643564336164652e706e67"
-        alt="Snaz"
-        width={699}
-        height={799}
-      />
+      <Image src="/assets/docs/home-example.png" alt="Snaz" width={699} height={799} />
 
       <div className="mt-10"></div>
     </div>
