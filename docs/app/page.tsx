@@ -3,6 +3,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import type { JSX } from 'react'
 
+import homeExample from '../public/assets/docs/home-example.png'
+
 export const metadata: Metadata = {
   description:
     'Build fast, customizable, and content-rich websites with Flatsome and Flatsome Blocks. Powered by WordPress & WooCommerce.',
@@ -38,7 +40,7 @@ export default function IndexPage(): JSX.Element {
         </div>
       </div>
 
-      <Image src="/assets/docs/home-example.png" alt="Snaz" width={699} height={799} />
+      <Image src={homeExample} alt="Snaz" width={699} height={799} />
 
       <div className="mt-10"></div>
     </div>
