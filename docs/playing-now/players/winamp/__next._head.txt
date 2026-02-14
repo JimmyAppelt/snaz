@@ -1,0 +1,5 @@
+1:"$Sreact.fragment"
+2:I[66765,["/snaz/_next/static/chunks/29dead37078d3338.js","/snaz/_next/static/chunks/ab1b387c8458fff4.js"],"ViewportBoundary"]
+3:I[66765,["/snaz/_next/static/chunks/29dead37078d3338.js","/snaz/_next/static/chunks/ab1b387c8458fff4.js"],"MetadataBoundary"]
+4:"$Sreact.suspense"
+0:{"buildId":"m3Do_jXcfFNZzpZKXisqA","rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L3",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Winamp | Snaz Docs"}],["$","meta","1",{"name":"description","content":"Documentation for Snaz"}],["$","meta","2",{"name":"keywords","content":"Snaz,Documentation,OBS,Stream,Twitch,Countdown,Timer,Streaming,Overlay"}]]}]}]}],null]}],"loading":null,"isPartial":false}

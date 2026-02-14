@@ -1,0 +1,69 @@
+1:"$Sreact.fragment"
+2:I[31866,["/snaz/_next/static/chunks/647882b8f2b17a4a.js","/snaz/_next/static/chunks/49c1fa3e682dc67b.js","/snaz/_next/static/chunks/4af0e891bb6f138c.js","/snaz/_next/static/chunks/7136539a6fd05a53.js","/snaz/_next/static/chunks/2e14c0846bd156c9.js"],"TOCProvider"]
+3:I[9121,["/snaz/_next/static/chunks/647882b8f2b17a4a.js","/snaz/_next/static/chunks/49c1fa3e682dc67b.js","/snaz/_next/static/chunks/4af0e891bb6f138c.js","/snaz/_next/static/chunks/7136539a6fd05a53.js","/snaz/_next/static/chunks/2e14c0846bd156c9.js"],"Sidebar"]
+4:I[80960,["/snaz/_next/static/chunks/647882b8f2b17a4a.js","/snaz/_next/static/chunks/49c1fa3e682dc67b.js","/snaz/_next/static/chunks/4af0e891bb6f138c.js","/snaz/_next/static/chunks/7136539a6fd05a53.js","/snaz/_next/static/chunks/2e14c0846bd156c9.js"],"ClientWrapper"]
+6:I[75906,["/snaz/_next/static/chunks/647882b8f2b17a4a.js","/snaz/_next/static/chunks/49c1fa3e682dc67b.js","/snaz/_next/static/chunks/4af0e891bb6f138c.js","/snaz/_next/static/chunks/7136539a6fd05a53.js","/snaz/_next/static/chunks/2e14c0846bd156c9.js"],"HeadingAnchor"]
+15:I[66765,["/snaz/_next/static/chunks/29dead37078d3338.js","/snaz/_next/static/chunks/ab1b387c8458fff4.js"],"OutletBoundary"]
+16:"$Sreact.suspense"
+:HL["https://i.gyazo.com/b63a8578a2f14805a970e8db618f159a.png","image"]
+:HL["https://i.gyazo.com/5ea5db927e7b26cd40e6728496e3b4ac.png","image"]
+:HL["https://i.imgur.com/oNiXWkA.png","image"]
+:HL["https://i.imgur.com/8X7B4C4.png","image"]
+5:T55d,import { Highlight } from '@/components/content'
+
+# OBS Integration
+
+Any stream software will work if it is able to read files feel free to commit information about other players!
+
+## OBS Studio
+
+### Add a text source in Studio
+
+* Press the <Highlight>+</Highlight> sign in OBS Studio and select <Highlight>Text (GDI+)</Highlight>
+
+![Source](https://i.gyazo.com/b63a8578a2f14805a970e8db618f159a.png)
+
+### Link a Snaz text file in Studio
+
+* In the property's of the source check mark <Highlight>Read from file</Highlight>
+* Press the <Highlight>browse</Highlight> button and select the file you would like to link
+
+>[!TIP]
+>
+> For good quality text, make the font size very big in the source and scale it down afterwards in the scene)
+
+![Link](https://i.gyazo.com/5ea5db927e7b26cd40e6728496e3b4ac.png)
+
+## OBS Classic
+
+### Add a text source in Classic
+
+* **Right click** in the sources box and select **Add → Text**
+
+![Source](https://i.imgur.com/oNiXWkA.png)
+
+### Link a Snaz text file in Classic
+
+* In the property's of the source check mark <Highlight>Use Text From File</Highlight>
+* **Paste** the text file link or press the <Highlight>browse</Highlight> button and select the file you would like to link
+
+>[!TIP]
+>
+> For good quality text, make the font size very big in the source and scale it down afterwards in the scene)
+
+![Link](https://i.imgur.com/8X7B4C4.png)0:{"buildId":"m3Do_jXcfFNZzpZKXisqA","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"x:mx-auto x:flex x:max-w-(--nextra-content-width)","children":["$","$L2",null,{"value":[{"value":"OBS Studio","id":"obs-studio","depth":2},{"value":"Add a text source in Studio","id":"add-a-text-source-in-studio","depth":3},{"value":"Link a Snaz text file in Studio","id":"link-a-snaz-text-file-in-studio","depth":3},{"value":"OBS Classic","id":"obs-classic","depth":2},{"value":"Add a text source in Classic","id":"add-a-text-source-in-classic","depth":3},{"value":"Link a Snaz text file in Classic","id":"link-a-snaz-text-file-in-classic","depth":3}],"children":[["$","$L3",null,{}],["$","$L4",null,{"metadata":{"title":"OBS Integration","filePath":"app/docs/obs/page.mdx","timestamp":1770984622000},"sourceCode":"$5","children":[["$","div",null,{"id":"nextra-skip-nav"}],["$","main",null,{"data-pagefind-body":true,"children":[["$","h1",null,{"className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-bold x:mt-2 x:text-4xl","children":["OBS Integration","$undefined"]}],"\n",["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"Any stream software will work if it is able to read files feel free to commit information about other players!"}],"\n",["$","h2",null,{"id":"obs-studio","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-10 x:border-b x:pb-1 x:text-3xl nextra-border","children":["OBS Studio",["$","$L6",null,{"id":"obs-studio"}]]}],"\n",["$","h3",null,{"id":"add-a-text-source-in-studio","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-8 x:text-2xl","children":["Add a text source in Studio",["$","$L6",null,{"id":"add-a-text-source-in-studio"}]]}],"\n",["$","ul",null,{"className":"x:[:is(ol,ul)_&]:my-[.75em] x:not-first:mt-[1.25em] x:list-disc x:ms-[1.5em]","children":["\n",["$","li",null,{"className":"x:my-[.5em]","children":["Press the ",["$","span",null,{"className":"bg-blue-100 dark:bg-blue-900/30 font-semibold dark:text-blue-200 px-1.5 py-0.5 rounded-md","children":"+"}]," sign in OBS Studio and select ",["$","span",null,{"className":"bg-blue-100 dark:bg-blue-900/30 font-semibold dark:text-blue-200 px-1.5 py-0.5 rounded-md","children":"Text (GDI+)"}]]}],"\n"]}],"\n",["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"$L7"}],"\n","$L8","\n","$L9","\n","$La","\n","$Lb","\n","$Lc","\n","$Ld","\n","$Le","\n","$Lf","\n","$L10","\n","$L11","\n","$L12","\n","$L13"]}]]}]]}]}],null,"$L14"]}],"loading":null,"isPartial":false}
+7:["$","img",null,{"src":"https://i.gyazo.com/b63a8578a2f14805a970e8db618f159a.png","alt":"Source","className":"rounded-xl border drop-shadow-sm","data-pagefind-index-attrs":"title,alt"}]
+8:["$","h3",null,{"id":"link-a-snaz-text-file-in-studio","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-8 x:text-2xl","children":["Link a Snaz text file in Studio",["$","$L6",null,{"id":"link-a-snaz-text-file-in-studio"}]]}]
+9:["$","ul",null,{"className":"x:[:is(ol,ul)_&]:my-[.75em] x:not-first:mt-[1.25em] x:list-disc x:ms-[1.5em]","children":["\n",["$","li",null,{"className":"x:my-[.5em]","children":["In the property’s of the source check mark ",["$","span",null,{"className":"bg-blue-100 dark:bg-blue-900/30 font-semibold dark:text-blue-200 px-1.5 py-0.5 rounded-md","children":"Read from file"}]]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":["Press the ",["$","span",null,{"className":"bg-blue-100 dark:bg-blue-900/30 font-semibold dark:text-blue-200 px-1.5 py-0.5 rounded-md","children":"browse"}]," button and select the file you would like to link"]}],"\n"]}]
+a:["$","div",null,{"className":"nextra-callout x:overflow-x-auto x:not-first:mt-[1.25em] x:flex x:rounded-lg x:border x:py-[.5em] x:pe-[1em] x:contrast-more:border-current! x:bg-green-100 x:dark:bg-green-900/30 x:text-green-700 x:dark:text-green-500 x:border-green-700 x:dark:border-green-800","children":[["$","div",null,{"className":"x:select-none x:text-[1.25em] x:ps-[.6em] x:pe-[.4em]","style":{"fontFamily":"\"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\""},"data-pagefind-ignore":"all","children":["$","svg",null,{"viewBox":"0 0 16 16","fill":"currentColor","height":".8em","className":"x:mt-[.3em]","children":["$","path",null,{"d":"M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"}]}]}],["$","div",null,{"className":"x:w-full x:min-w-0","children":[["$","b","0",{"children":"Tip"}],"\n",["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"For good quality text, make the font size very big in the source and scale it down afterwards in the scene)"}],"\n"]}]]}]
+b:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":["$","img",null,{"src":"https://i.gyazo.com/5ea5db927e7b26cd40e6728496e3b4ac.png","alt":"Link","className":"rounded-xl border drop-shadow-sm","data-pagefind-index-attrs":"title,alt"}]}]
+c:["$","h2",null,{"id":"obs-classic","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-10 x:border-b x:pb-1 x:text-3xl nextra-border","children":["OBS Classic",["$","$L6",null,{"id":"obs-classic"}]]}]
+d:["$","h3",null,{"id":"add-a-text-source-in-classic","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-8 x:text-2xl","children":["Add a text source in Classic",["$","$L6",null,{"id":"add-a-text-source-in-classic"}]]}]
+e:["$","ul",null,{"className":"x:[:is(ol,ul)_&]:my-[.75em] x:not-first:mt-[1.25em] x:list-disc x:ms-[1.5em]","children":["\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"Right click"}]," in the sources box and select ",["$","strong",null,{"children":"Add → Text"}]]}],"\n"]}]
+f:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":["$","img",null,{"src":"https://i.imgur.com/oNiXWkA.png","alt":"Source","className":"rounded-xl border drop-shadow-sm","data-pagefind-index-attrs":"title,alt"}]}]
+10:["$","h3",null,{"id":"link-a-snaz-text-file-in-classic","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-8 x:text-2xl","children":["Link a Snaz text file in Classic",["$","$L6",null,{"id":"link-a-snaz-text-file-in-classic"}]]}]
+11:["$","ul",null,{"className":"x:[:is(ol,ul)_&]:my-[.75em] x:not-first:mt-[1.25em] x:list-disc x:ms-[1.5em]","children":["\n",["$","li",null,{"className":"x:my-[.5em]","children":["In the property’s of the source check mark ",["$","span",null,{"className":"bg-blue-100 dark:bg-blue-900/30 font-semibold dark:text-blue-200 px-1.5 py-0.5 rounded-md","children":"Use Text From File"}]]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"Paste"}]," the text file link or press the ",["$","span",null,{"className":"bg-blue-100 dark:bg-blue-900/30 font-semibold dark:text-blue-200 px-1.5 py-0.5 rounded-md","children":"browse"}]," button and select the file you would like to link"]}],"\n"]}]
+12:["$","div",null,{"className":"nextra-callout x:overflow-x-auto x:not-first:mt-[1.25em] x:flex x:rounded-lg x:border x:py-[.5em] x:pe-[1em] x:contrast-more:border-current! x:bg-green-100 x:dark:bg-green-900/30 x:text-green-700 x:dark:text-green-500 x:border-green-700 x:dark:border-green-800","children":[["$","div",null,{"className":"x:select-none x:text-[1.25em] x:ps-[.6em] x:pe-[.4em]","style":"$a:props:children:0:props:style","data-pagefind-ignore":"all","children":"$a:props:children:0:props:children"}],["$","div",null,{"className":"x:w-full x:min-w-0","children":[["$","b","0",{"children":"Tip"}],"\n",["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"For good quality text, make the font size very big in the source and scale it down afterwards in the scene)"}],"\n"]}]]}]
+13:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":["$","img",null,{"src":"https://i.imgur.com/8X7B4C4.png","alt":"Link","className":"rounded-xl border drop-shadow-sm","data-pagefind-index-attrs":"title,alt"}]}]
+14:["$","$L15",null,{"children":["$","$16",null,{"name":"Next.MetadataOutlet","children":"$@17"}]}]
+17:null

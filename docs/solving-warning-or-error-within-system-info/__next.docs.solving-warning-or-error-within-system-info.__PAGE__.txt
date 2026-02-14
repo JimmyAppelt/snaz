@@ -1,0 +1,48 @@
+1:"$Sreact.fragment"
+2:I[31866,["/snaz/_next/static/chunks/647882b8f2b17a4a.js","/snaz/_next/static/chunks/49c1fa3e682dc67b.js","/snaz/_next/static/chunks/4af0e891bb6f138c.js","/snaz/_next/static/chunks/7136539a6fd05a53.js","/snaz/_next/static/chunks/2e14c0846bd156c9.js"],"TOCProvider"]
+3:I[9121,["/snaz/_next/static/chunks/647882b8f2b17a4a.js","/snaz/_next/static/chunks/49c1fa3e682dc67b.js","/snaz/_next/static/chunks/4af0e891bb6f138c.js","/snaz/_next/static/chunks/7136539a6fd05a53.js","/snaz/_next/static/chunks/2e14c0846bd156c9.js"],"Sidebar"]
+4:I[80960,["/snaz/_next/static/chunks/647882b8f2b17a4a.js","/snaz/_next/static/chunks/49c1fa3e682dc67b.js","/snaz/_next/static/chunks/4af0e891bb6f138c.js","/snaz/_next/static/chunks/7136539a6fd05a53.js","/snaz/_next/static/chunks/2e14c0846bd156c9.js"],"ClientWrapper"]
+6:I[75906,["/snaz/_next/static/chunks/647882b8f2b17a4a.js","/snaz/_next/static/chunks/49c1fa3e682dc67b.js","/snaz/_next/static/chunks/4af0e891bb6f138c.js","/snaz/_next/static/chunks/7136539a6fd05a53.js","/snaz/_next/static/chunks/2e14c0846bd156c9.js"],"HeadingAnchor"]
+7:I[51802,["/snaz/_next/static/chunks/647882b8f2b17a4a.js","/snaz/_next/static/chunks/49c1fa3e682dc67b.js","/snaz/_next/static/chunks/4af0e891bb6f138c.js","/snaz/_next/static/chunks/7136539a6fd05a53.js","/snaz/_next/static/chunks/2e14c0846bd156c9.js"],"ToggleWordWrapButton"]
+8:I[77650,["/snaz/_next/static/chunks/647882b8f2b17a4a.js","/snaz/_next/static/chunks/49c1fa3e682dc67b.js","/snaz/_next/static/chunks/4af0e891bb6f138c.js","/snaz/_next/static/chunks/7136539a6fd05a53.js","/snaz/_next/static/chunks/2e14c0846bd156c9.js"],"CopyToClipboard"]
+13:I[66765,["/snaz/_next/static/chunks/29dead37078d3338.js","/snaz/_next/static/chunks/ab1b387c8458fff4.js"],"OutletBoundary"]
+14:"$Sreact.suspense"
+5:T4db,# Solving warning or error within System Info
+
+## Cannot Load Counter Name data
+
+```console
+Cannot Load Counter Name data because an invalid index was read from the registry
+```
+
+This issue comes up in cases when one or more performance counters on your system are corrupted.
+
+### Rebuild all performance counters:
+
+* Open command prompt (with Admin privileges)
+* Run command: `lodctr /R`
+
+The message with: `Info: Successfully rebuilt performance counter setting ...` will appear on success.
+
+In case you receive the message `Unable to rebuild performance counter setting from system backup store, error code is 2` possible solutions:
+
+* Close all running programs
+* Make sure you use `lodctr /R` with uppercase `R`
+* If in directory `system32` move to directory `SysWOW64` *(with cd.. > cd syswow64)* and retry the `lodctr /R` command in this directory
+
+After successfully rebuilt, re-open Snaz and check if same warning occurs. If the same warning occurs, please feel free to open a new issue. 
+
+## Snaz is responding only few frames/sec
+
+In very rare cases, it is observed that the network traffic counter is not picking up your system network card properly. Try disabling the network traffic meter in **File → Settings → System Info**0:{"buildId":"m3Do_jXcfFNZzpZKXisqA","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"x:mx-auto x:flex x:max-w-(--nextra-content-width)","children":["$","$L2",null,{"value":[{"value":"Cannot Load Counter Name data","id":"cannot-load-counter-name-data","depth":2},{"value":"Rebuild all performance counters:","id":"rebuild-all-performance-counters","depth":3},{"value":"Snaz is responding only few frames/sec","id":"snaz-is-responding-only-few-framessec","depth":2}],"children":[["$","$L3",null,{}],["$","$L4",null,{"metadata":{"title":"Solving warning or error within System Info","filePath":"app/docs/solving-warning-or-error-within-system-info/page.mdx","timestamp":1770984622000},"sourceCode":"$5","children":[["$","div",null,{"id":"nextra-skip-nav"}],["$","main",null,{"data-pagefind-body":true,"children":[["$","h1",null,{"className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-bold x:mt-2 x:text-4xl","children":["Solving warning or error within System Info","$undefined"]}],"\n",["$","h2",null,{"id":"cannot-load-counter-name-data","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-10 x:border-b x:pb-1 x:text-3xl nextra-border","children":["Cannot Load Counter Name data",["$","$L6",null,{"id":"cannot-load-counter-name-data"}]]}],"\n",["$","div",null,{"data-pagefind-ignore":"all","className":"nextra-code x:relative x:not-first:mt-[1.25em]","children":["$undefined",["$","pre",null,{"className":"x:group x:focus-visible:nextra-focus x:overflow-x-auto x:subpixel-antialiased x:text-[.9em] x:bg-white x:dark:bg-black x:py-4 x:ring-1 x:ring-inset x:ring-gray-300 x:dark:ring-neutral-700 x:contrast-more:ring-gray-900 x:contrast-more:dark:ring-gray-50 x:contrast-more:contrast-150 x:rounded-md not-prose","tabIndex":"0","children":[["$","div",null,{"className":"x:group-hover:opacity-100 x:group-focus:opacity-100 x:opacity-0 x:transition x:focus-within:opacity-100 x:flex x:gap-1 x:absolute x:right-4 x:top-2","children":[["$","$L7",null,{"children":["$","svg",null,{"viewBox":"0 0 24 24","fill":"currentColor","height":"1em","children":["$","path",null,{"d":"M4 19h6v-2H4v2zM20 5H4v2h16V5zm-3 6H4v2h13.25c1.1 0 2 .9 2 2s-.9 2-2 2H15v-2l-3 3l3 3v-2h2c2.21 0 4-1.79 4-4s-1.79-4-4-4z"}]}]}],["$","$L8",null,{"className":""}]]}],["$","code",null,{"className":"nextra-code","dir":"ltr","children":["$","span",null,{"children":["$","span",null,{"style":{"--shiki-light":"#005CC5","--shiki-dark":"#79B8FF"},"children":"Cannot Load Counter Name data because an invalid index was read from the registry"}]}]}]]}]]}],"\n","$L9","\n","$La","\n","$Lb","\n","$Lc","\n","$Ld","\n","$Le","\n","$Lf","\n","$L10","\n","$L11"]}]]}]]}]}],null,"$L12"]}],"loading":null,"isPartial":false}
+9:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"This issue comes up in cases when one or more performance counters on your system are corrupted."}]
+a:["$","h3",null,{"id":"rebuild-all-performance-counters","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-8 x:text-2xl","children":["Rebuild all performance counters:",["$","$L6",null,{"id":"rebuild-all-performance-counters"}]]}]
+b:["$","ul",null,{"className":"x:[:is(ol,ul)_&]:my-[.75em] x:not-first:mt-[1.25em] x:list-disc x:ms-[1.5em]","children":["\n",["$","li",null,{"className":"x:my-[.5em]","children":"Open command prompt (with Admin privileges)"}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":["Run command: ",["$","code",null,{"className":"nextra-code","dir":"ltr","children":"lodctr /R"}]]}],"\n"]}]
+c:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":["The message with: ",["$","code",null,{"className":"nextra-code","dir":"ltr","children":"Info: Successfully rebuilt performance counter setting ..."}]," will appear on success."]}]
+d:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":["In case you receive the message ",["$","code",null,{"className":"nextra-code","dir":"ltr","children":"Unable to rebuild performance counter setting from system backup store, error code is 2"}]," possible solutions:"]}]
+e:["$","ul",null,{"className":"x:[:is(ol,ul)_&]:my-[.75em] x:not-first:mt-[1.25em] x:list-disc x:ms-[1.5em]","children":["\n",["$","li",null,{"className":"x:my-[.5em]","children":"Close all running programs"}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":["Make sure you use ",["$","code",null,{"className":"nextra-code","dir":"ltr","children":"lodctr /R"}]," with uppercase ",["$","code",null,{"className":"nextra-code","dir":"ltr","children":"R"}]]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":["If in directory ",["$","code",null,{"className":"nextra-code","dir":"ltr","children":"system32"}]," move to directory ",["$","code",null,{"className":"nextra-code","dir":"ltr","children":"SysWOW64"}]," ",["$","em",null,{"children":"(with cd.. > cd syswow64)"}]," and retry the ",["$","code",null,{"className":"nextra-code","dir":"ltr","children":"lodctr /R"}]," command in this directory"]}],"\n"]}]
+f:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"After successfully rebuilt, re-open Snaz and check if same warning occurs. If the same warning occurs, please feel free to open a new issue."}]
+10:["$","h2",null,{"id":"snaz-is-responding-only-few-framessec","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-10 x:border-b x:pb-1 x:text-3xl nextra-border","children":["Snaz is responding only few frames/sec",["$","$L6",null,{"id":"snaz-is-responding-only-few-framessec"}]]}]
+11:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":["In very rare cases, it is observed that the network traffic counter is not picking up your system network card properly. Try disabling the network traffic meter in ",["$","strong",null,{"children":"File → Settings → System Info"}]]}]
+12:["$","$L13",null,{"children":["$","$14",null,{"name":"Next.MetadataOutlet","children":"$@15"}]}]
+15:null
