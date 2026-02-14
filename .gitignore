@@ -3,6 +3,9 @@
 .cursor/
 .idea/
 
+# Project
+.claude/
+
 # Dependencies
 node_modules/
 

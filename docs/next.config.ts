@@ -41,12 +41,15 @@ export default withNextra({
     return config
   },
   turbopack: {
+    resolveAlias: {
+      'next-mdx-import-source-file': './mdx-components.tsx',
+    },
     rules: {
-      './app/components/annotations/**/*.svg': {
+      './components/annotations/**/*.svg': {
         loaders: ['@svgr/webpack'],
         as: '*.js',
       },
-      './app/components/icons/**/*.svg': {
+      './components/icons/**/*.svg': {
         loaders: ['@svgr/webpack'],
         as: '*.js',
       },
